@@ -1,13 +1,19 @@
-import os
+# to run script : python main.py
 
-from dotenv import load_dotenv
-from twitchio.ext import commands
+import os
+# need to set up venv first
+# ? python3 -m venv venv on macos
+
+# requirement.txt or run those lines
+from dotenv import load_dotenv # pip install python-dotenv
+from twitchio.ext import commands # pip install twitchio==2.9.1
 import random
 
 load_dotenv()
 
+# create .env or load variables here
 BOT_NICK = os.environ.get("BOT_NICK")
-TOKEN = os.environ.get("TOKEN")
+TOKEN = os.environ.get("TOKEN") # generate new token for diff channel : https://twitchtokengenerator.com/
 CHANNEL = os.environ.get("CHANNEL")
 
 
